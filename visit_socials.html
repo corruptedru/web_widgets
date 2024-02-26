@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 
-<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+<!-- Author: Shorouk Abdelaziz  https://shorouk.dev -->
 
 <html lang="en">
 
@@ -126,6 +125,11 @@
       background-color: #FFFC00;
     }
 
+    .whatsapp:hover,
+    .whatsapp::after {
+      background-color: #25D366; /* WhatsApp Green Color */
+    }
+
     .social {
       position: relative;
       margin: 10px;
@@ -177,6 +181,12 @@
     </div>
     <!-- End snapchat Icon -->
 
+    <!-- Start whatsapp Icon -->
+    <div id="whatsapp" onclick="navigate(this.id)" class="fill whatsapp">
+      <span class="icon"><i class="fab fa-whatsapp"></i></span>
+    </div>
+    <!-- End whatsapp Icon -->
+
 
   </div>
 
@@ -196,6 +206,9 @@
       else if (id === "snapchat") {
         window.open("https://www.snapchat.com/add/corrupted_ru?share_id=mt_NaCzQZB0&locale=en-US", '_blank').focus(); //Add the url to your snapchat account
       }
+      else if (id === "whatsapp") {
+        window.open("https://wa.me/01862464523", '_blank').focus(); // Add your WhatsApp number here
+      }
       // Add other social media redirections as needed
     }
   </script>
@@ -203,4 +216,3 @@
 </body>
 
 </html>
-
