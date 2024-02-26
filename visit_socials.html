@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
@@ -120,6 +121,11 @@
       background-color: #2AABEE;
     }
 
+    .snapchat:hover,
+    .snapchat::after {
+      background-color: #FFFC00;
+    }
+
     .social {
       position: relative;
       margin: 10px;
@@ -135,88 +141,66 @@
 
 <body>
 
-  <body>
+  <div class="wrapper">
 
-    <div class="wrapper">
-
-      <!-- Start blog Icon -->
-      <div id="blog" onclick="navigate(this.id)" class="fill  blog">
-        <span class="icon"><i class="fa-solid fa-blog"></i></span>
-      </div>
-      <!-- End blog Icon -->
-
-
-      <!-- Start email Icon -->
-      <div id="email" onclick="navigate(this.id)" class="fill email">
-        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
-      </div>
-      <!-- End email Icon -->
-
-
-      <!-- Start facebook Icon -->
-      <div id="facebook" onclick="navigate(this.id)" class="fill facebook">
-        <span class="icon"><i class="fab fa-facebook"></i></span>
-      </div>
-      <!-- End facebook Icon -->
-
-
-      <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
-        <span class="icon"><i class="fab fa-instagram"></i></span>
-      </div>
-      <!-- End instagram Icon -->
-
-
-     
+    <!-- Start blog Icon -->
+    <div id="blog" onclick="navigate(this.id)" class="fill blog">
+      <span class="icon"><i class="fa-solid fa-blog"></i></span>
     </div>
+    <!-- End blog Icon -->
 
 
+    <!-- Start email Icon -->
+    <div id="email" onclick="navigate(this.id)" class="fill email">
+      <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+    </div>
+    <!-- End email Icon -->
 
 
-    <script>
-      function navigate(id) {
+    <!-- Start facebook Icon -->
+    <div id="facebook" onclick="navigate(this.id)" class="fill facebook">
+      <span class="icon"><i class="fab fa-facebook"></i></span>
+    </div>
+    <!-- End facebook Icon -->
 
-        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
-        if (id === "blog")
-          window.open("https://www.notion.so/cyberox/Pranto-Das-Rudro-63264e0b9b584b0eb555ae3195e9b704", '_blank').focus(); //Add the url to your blog
+    <!-- Start instagram Icon -->
+    <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
+      <span class="icon"><i class="fab fa-instagram"></i></span>
+    </div>
+    <!-- End instagram Icon -->
 
-        else if (id === "email") {
-          window.open("mailto:cyberoxofficial.in@gmail.com", '_blank').focus(); //Add your email after "mailto:""
-        }
-        else if (id === "facebook") {
-          window.open("https://www.facebook.com/rudro679?mibextid=ZbWKwL", '_blank').focus(); //Add the url to your facebook page or account
-        }
-        else if (id === "instagram") {
-          window.open("https://www.instagram.com/corrupted_ru?igsh=emJ4MHJyeGUwMG41/", '_blank').focus(); //Add the url to your instagram account
-        }
-        else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "twitter") {
-          window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "reddit") {
-          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
-        }
-        else if (id === "tiktok") {
-          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
-        }
-        else if (id === "youtube") {
-          window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
-        }
-        else if (id === "pinterest") {
-          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
-        }
+
+    <!-- Start snapchat Icon -->
+    <div id="snapchat" onclick="navigate(this.id)" class="fill snapchat">
+      <span class="icon"><i class="fab fa-snapchat-ghost"></i></span>
+    </div>
+    <!-- End snapchat Icon -->
+
+
+  </div>
+
+  <script>
+    function navigate(id) {
+      if (id === "blog")
+        window.open("https://www.notion.so/cyberox/Pranto-Das-Rudro-63264e0b9b584b0eb555ae3195e9b704", '_blank').focus(); //Add the url to your blog
+      else if (id === "email") {
+        window.open("mailto:cyberoxofficial.in@gmail.com", '_blank').focus(); //Add your email after "mailto:""
       }
+      else if (id === "facebook") {
+        window.open("https://www.facebook.com/rudro679?mibextid=ZbWKwL", '_blank').focus(); //Add the url to your facebook page or account
+      }
+      else if (id === "instagram") {
+        window.open("https://www.instagram.com/corrupted_ru?igsh=emJ4MHJyeGUwMG41/", '_blank').focus(); //Add the url to your instagram account
+      }
+      else if (id === "snapchat") {
+        window.open("https://www.snapchat.com/add/corrupted_ru?share_id=mt_NaCzQZB0&locale=en-US", '_blank').focus(); //Add the url to your snapchat account
+      }
+      // Add other social media redirections as needed
+    }
+  </script>
 
-    </script>
-
-
-
-  </body>
+</body>
 
 </html>
+
